@@ -1,0 +1,85 @@
+/* AskerJs theme: tinny v1.0.0 */
+
+@tailwind base;
+/*@tailwind components;
+@tailwind utilities;*/
+
+
+
+/* tinny theme */
+.asker_container{
+    @apply p-4 flex flex-col gap-4 max-w-[300px] bg-white rounded-md shadow-lg border border-t-4 border-t-blue-400
+}
+
+.asker_heading{
+    @apply text-xl  text-gray-800 capitalize font-medium;
+}
+
+.Asker_description, .asker_infoScreen-container{
+    @apply text-sm text-gray-600
+}
+
+
+.asker_input{
+    @apply w-full p-2 bg-gray-100 rounded text-gray-600 outline-none focus:border-blue-500 focus:shadow-lg focus:border-2 transition-all duration-75
+}
+
+.asker_buttons-container{
+    @apply  flex justify-between items-center;
+}
+
+.asker_next-btn{
+    @apply font-medium text-blue-500;
+}
+
+.asker_back-btn{
+    @apply text-gray-700;
+}
+
+
+.asker_textarea{
+    @apply w-full p-2 bg-gray-100 rounded text-gray-600 outline-none focus:border-2 focus:border-blue-500 focus:shadow-lg transition-all duration-75
+}
+
+.asker_dropZone{
+    @apply w-full h-24 border-2 border-dashed bg-gray-100 rounded-md flex justify-center items-center text-gray-600
+}
+.asker_dropZone.droped{
+    @apply bg-green-500 border-green-500 text-white
+}
+.asker_dropZone.droped.error{
+    @apply bg-red-500 border-red-500 text-white
+}
+
+.asker_dropZone input{
+    @apply w-full h-full absolute opacity-0
+}
+
+.asker_dropZone-title{
+    @apply text-lg
+}
+
+.asker_dropZone-file{
+    @apply p-3 rounded bg-green-400 text-white mt-3
+}
+
+.asker_choices-container{
+    @apply flex flex-col gap-6
+}
+
+.asker_choice{
+    @apply p-3 bg-gray-100 text-gray-600 rounded flex flex-wrap items-center gap-4 cursor-pointer 
+}
+
+.asker_select-icon{
+    @apply w-5 h-5 rounded border-gray-400 flex justify-center items-center border transition-all duration-100
+}
+
+.asker_select-icon.selected{
+    @apply bg-gray-500 border-gray-500
+}
+
+.asker_error-massage{
+    @apply p-3 bg-red-500 text-white rounded mt-3
+}
+
